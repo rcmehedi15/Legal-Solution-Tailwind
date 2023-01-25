@@ -1,0 +1,769 @@
+<!-- @format -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>B7 Legal House</title>
+
+    <!-- Favicon  -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+
+    <!-- Google Fonts  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- font awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- Tailwind CSS  -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Custom color setup  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "b7-primary": "#B68C5A",
+              "b7-secondary": "#414040",
+              "b7-dark": "#111111",
+              "b7-white": "#707070",
+              "b7-white-200": "#CFCFCF",
+              "b7-input": "#F3F3F3",
+            
+              
+            },
+            fontFamily: {
+              'ebfont': ['EB Garamond'],
+              'poppinsfont': ['Poppins'],
+            }
+          },
+        },
+      };
+    </script>
+
+    <style>
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        background-image: none;
+      }
+
+      .carousel-control-next-icon:after {
+        content: ">";
+        font-size: 55px;
+        color: rgb(0, 0, 0);
+      }
+
+      .carousel-control-prev-icon:after {
+        content: "<";
+        font-size: 55px;
+        color: #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Menu  -->
+
+    <header>
+      <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded">
+        <div
+          class="container mx-auto flex flex-wrap items-center justify-between"
+        >
+          <a href="#" class="flex items-center">
+            <img
+              src="./images/logo2.png"
+              class="h-6 mr-3 sm:h-9"
+              alt="Justice"
+            />
+          </a>
+          <div class="flex md:order-2">
+                <!-- Button trigger modal -->
+                        <button type="button" class="px-6
+                          py-2.5 bg-b7-primary text-white font-medium text-xs rounded shadow-md ease-in-out rounded-lg text-sm px-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          Free Consultation
+                      </button>
+
+<!-- Modal -->
+                        <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+                        id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog relative w-auto pointer-events-none">
+                        <div
+                        class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
+                        <div
+                          class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
+                          <h5 class="text-xl font-medium leading-normal text-gray-800" id="exampleModalLabel">What is a user research question?</h5>
+                          <button type="button"
+                            class="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body relative p-4">
+                          Questions about the people e.g., who they are, how they use products, what they want to accomplish, how likely are they to use the product. Questions about the product e.g., how users' feel about content or design, can they navigate the product, how usable is it, what features do they like or dislike.
+                        </div>
+                        <div
+                          class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
+                          <button type="button" class="px-6
+                            py-2.5 bg-b7-dark
+                            text-white font-medium
+                            text-xs rounded
+                            shadow-md
+                                                        transition
+                            duration-150
+                            ease-in-out" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="px-6 py-2.5 bg-b7-primary text-white font-medium
+                        text-xs rounded shadow-md
+                        transition
+                        duration-150
+                        ease-in-out
+                        ml-1">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+            <button
+              data-collapse-toggle="navbar-cta"
+              type="button"
+              class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400"
+              aria-controls="navbar-cta"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-cta"
+          >
+            <ul
+              class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-white-800 md:dark:bg-white-900 dark:border-white-700"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-b7-white rounded md:bg-transparent md:text-b7-white md:p-0"
+                  aria-current="page"
+                  >Home &#62;
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-b7-white rounded md:bg-transparent md:text-b7-white md:p-0"
+                  aria-current="page"
+                  >Services &#62;
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-b7-white rounded md:bg-transparent md:text-b7-white md:p-0"
+                  aria-current="page"
+                  >Cases &#62;
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-b7-white rounded md:bg-transparent md:text-b7-white md:p-0"
+                  aria-current="page"
+                  >Blog &#62;
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-b7-white rounded md:bg-transparent md:text-b7-white md:p-0"
+                  aria-current="page"
+                  >Contact Us &#62;
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Banner Area  -->
+    <main>
+      <section class="container mx-auto md:flex-row mt-3">
+        <div
+          class="flex justify-center items-center text-center min-h-screen bg-cover bg-no-repeat bg-center"
+          style="background-image: url(./images/banner.jpg)"
+        >
+          <div class="p-4 md:p-20 text-white">
+            <h3 class="font-bold text-4xl font-ebfont">
+              We Provide Effective <br />
+              Legal Solutions
+            </h3>
+            <p class="my-5">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority <br />
+              have suffered alteration in some form, by injected humour.
+            </p>
+            <input
+              type="text"
+              placeholder="   Search your services"
+              class="p-3 rounded mx-3 w-100 h-50"
+            />
+            <button class="bg-b7-primary font-bold py-3 px-9 rounded-lg">
+              Search
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- The Legal Practice Area  -->
+      <section class="container mx-auto md:flex-row p-2 md:p-10">
+        <h2 class="font-bold text-5xl text-center text-b7-secondary font-ebfont">
+          The Legal Practice Area
+        </h2>
+        <p class="text-center py-5 w-3/4 mx-auto text-b7-white">
+          From corporate law to human rights law, find out about different
+          practice areas and <br />
+          what skills you need to succeed in each one.
+        </p>
+
+        <!-- card area  -->
+        <div class="grid grid-cols-1 md:grid-cols-3">
+          <!-- 1st card -->
+          <div class="text-center border border-gray-200 p-3">
+            <div class="p-3">
+              <img src="./images/icon/business.png" alt="" class="mx-auto" />
+            </div>
+            <h3 class="font-bold text-2xl py-2 font-ebfont">Business Law</h3>
+            <p class="w-3/4 mx-auto text-b7-secondary mb-3">
+              Corporate law is the body of law governing the rights, relations,
+              and conduct of persons, companies, organizations and businesses.
+              The term refers to the legal practice of law relating to
+              corporations level is the best
+            </p>
+            <img
+              class="inline text-sm text-center"
+              src="./images/icon/Frame.png"
+              alt=""
+            />
+          </div>
+
+          <!-- 2nd card -->
+          <div class="text-center border border-gray-200 p-3 bg-gray-100">
+            <div class="p-3">
+              <img src="./images/icon/criminal.png" alt="" class="mx-auto" />
+            </div>
+            <h3 class="font-bold text-2xl py-2 font-ebfont">Criminal Law</h3>
+            <p class="w-3/4 mx-auto text-b7-secondary mb-3">
+              Criminal law is the body of law that relates to crime. It
+              prescribes conduct perceived as threatening, harmful, or otherwise
+              endangering to the property, health, safety, and moral welfare of
+              people inclusive of one's.
+            </p>
+            <img
+              class="inline text-sm text-center"
+              src="./images/icon/Frame.png"
+              alt=""
+            />
+          </div>
+          <!-- 3rd card -->
+          <div class="text-center border border-gray-200 p-3">
+            <div class="p-3">
+              <img src="./images/icon/child.png" alt="" class="mx-auto" />
+            </div>
+            <h3 class="font-bold text-2xl py-2 font-ebfont">Child Support</h3>
+            <p class="w-3/4 mx-auto text-b7-secondary mb-3">
+              You will pay a standard amount of £7 a week for the first £100 of
+              your income plus a percentage of the gross weekly income for the
+              rest of your income. The percentage you pay depends on the main
+              response you.
+            </p>
+            <img
+              class="inline text-sm text-center"
+              src="./images/icon/Frame.png"
+              alt=""
+            />
+          </div>
+          <!-- 4th card -->
+          <div class="text-center border border-gray-200 p-3">
+            <div class="p-3">
+              <img src="./images/icon/education.png" alt="" class="mx-auto" />
+            </div>
+            <h3 class="font-bold text-2xl py-2 font-ebfont">Education Law</h3>
+            <p class="w-3/4 mx-auto text-b7-secondary mb-3">
+              South African Schools Act of 1996, which promotes access to
+              education, promotes quality and democratic governance in the
+              schooling system, and makes schooling compulsory for children aged
+              seven to
+            </p>
+            <img
+              class="inline text-sm text-center"
+              src="./images/icon/Frame.png"
+              alt=""
+            />
+          </div>
+          <!-- 5th card -->
+          <div class="text-center border border-gray-200 p-3">
+            <div class="p-3">
+              <img src="./images/icon/divorce.png" alt="" class="mx-auto" />
+            </div>
+            <h3 class="font-bold text-2xl py-2 font-ebfont">Divorce Law</h3>
+            <p class="w-3/4 mx-auto text-b7-secondary mb-3">
+              Divorce entails the cancelation or reorganisation of the legal
+              responsibilities of marriage by dissolving the bonds of marriage
+              between a married couple under the rule of law of a particular
+              state or country.
+            </p>
+            <img
+              class="inline text-sm text-center"
+              src="./images/icon/Frame.png"
+              alt=""
+            />
+          </div>
+          <!-- 6th card -->
+          <div class="text-center border border-gray-200 p-3">
+            <div class="p-3">
+              <img src="./images/icon/business.png" alt="" class="mx-auto" />
+            </div>
+            <h3 class="font-bold text-2xl py-2 font-ebfont">Tax Law</h3>
+            <p class="w-3/4 mx-auto text-b7-secondary mb-3">
+              Tax law is the body of rules under which a public authority has a
+              claim on taxpayers, requiring them to transfer to the authority
+              part of their income or property. The power to impose taxes is
+              generally recognized as a right
+            </p>
+            <img
+              class="inline text-sm text-center"
+              src="./images/icon/Frame.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <!-- What Our Client Say Area  -->
+      <section class="container mx-auto md:flex-row p-2 md:p-10">
+        <h2 class="font-bold text-5xl text-center text-b7-secondary font-ebfont">
+          What Our Client Say
+        </h2>
+        <p class="text-center my-7 py-5 w-3/4 mx-auto text-b7-white">
+          The company required clients to pay substantial fees in advance.
+          <br />
+          They not only aim to sell goods but also they take pride in how they
+          serve their clients.
+        </p>
+
+        <div
+          class="min-h-screen bg-cover bg-no-repeat bg-center flex justify-center items-center text-white text-center"
+          style="background-image: url(./images/banner.jpg)"
+        >
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide relative carousel-dark"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner relative w-full overflow-hidden">
+              <div class="carousel-item active relative float-left w-full">
+                <img
+                  class="rounded-full shadow-lg mb-6 mx-auto"
+                  src="./images/icon/art1.png"
+                  alt="avatar"
+                  style="width: 150px"
+                />
+                <div class="flex flex-wrap justify-center">
+                  <div class="grow-0 shrink-0 basis-auto w-full lg:w-8/12 px-3">
+                    <h5 class="text-lg font-semibold font-ebfont">Md Mehedi Hasan</h5>
+                    <p class="text-white font-light mb-3">
+                      Full Stack Developer
+                    </p>
+                    <p class="text-white mb-6 font-normal">
+                      Smile when you first meet the client, to let them know
+                      that you are happy to see them and excited about the
+                      prospect of working together.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item relative float-left w-full">
+                <img
+                  class="rounded-full shadow-lg mb-6 mx-auto"
+                  src="./images/icon/art2.png"
+                  alt="avatar"
+                  style="width: 150px"
+                />
+                <div class="flex flex-wrap justify-center">
+                  <div class="grow-0 shrink-0 basis-auto w-full lg:w-8/12 px-3">
+                    <h5 class="text-lg font-semibold font-ebfont">Md Limon Hasan</h5>
+                    <p class="text-white font-light mb-3">
+                     CSE Engineer
+                    </p>
+                    <p class="text-white mb-6 font-normal">
+                      Smile when you first meet the client, to let them know
+                      that you are happy to see them and excited about the
+                      prospect of working together.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item relative float-left w-full">
+                <img
+                  class="rounded-full shadow-lg mb-6 mx-auto"
+                  src="./images/icon/art3.png"
+                  alt="avatar"
+                  style="width: 150px"
+                />
+                <div class="flex flex-wrap justify-center">
+                  <div class="grow-0 shrink-0 basis-auto w-full lg:w-8/12 px-3">
+                    <h5 class="text-lg font-semibold font-ebfont">Awlad Hossainn</h5>
+                    <p class="text-white font-light mb-3">LAW Expert</p>
+                    <p class="text-white mb-6 font-normal">
+                      Smile when you first meet the client, to let them know
+                      that you are happy to see them and excited about the
+                      prospect of working together.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="fon carousel-control-prev-icon inline-block bg-no-repeat"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon inline-block bg-no-repeat"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Frequently Asked Any Questions  -->
+      <section class="container mx-auto md:flex-row p-2 md:p-10">
+        <h2 class="font-bold text-5xl text-center text-b7-secondary font-ebfont">
+          Frequently Asked Any Questions
+        </h2>
+        <p class="text-center py-5  mx-auto text-b7-white">
+          The company required clients to pay substantial fees in advance.
+          <br />
+          They not only aim to sell goods but also they take pride in how they
+          serve their clients.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-9">
+          <div class="accordion" id="accordionExample">
+            <div class=" accordion-item bg-white border border-gray-200">
+              <h2 class="accordion-header mb-0" id="headingOne">
+                <button class="
+                  accordion-button
+                  relative
+                  flex
+                  items-center
+                  w-full
+                  py-4
+                  px-5
+                  text-base text-gray-800 text-left
+                  bg-white
+                  border-0
+                  rounded-none
+                  transition
+                  focus:outline-none
+                " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  What meaning is law?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body py-4 px-5">
+                  <strong> a binding custom or practice of a community : a rule of conduct or action prescribed (see prescribe sense 1a) or formally recognized as binding or enforced by a controlling authority. (2) : the whole body of such customs, practices, or rules. The courts exist to uphold, interpret, and apply the law.</strong>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-white border border-gray-200">
+              <h2 class="accordion-header mb-0" id="headingTwo">
+                <button class="
+                  accordion-button
+                  collapsed
+                  relative
+                  flex
+                  items-center
+                  w-full
+                  py-4
+                  px-5
+                  text-base text-gray-800 text-left
+                  bg-white
+                  border-0
+                  rounded-none
+                  transition
+                  focus:outline-none
+                " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                  aria-controls="collapseTwo">
+                  What is the basic law of Bangladesh?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body py-4 px-5">
+                  <strong>The four fundamental principles of the Constitution are nationalism, socialism, democracy and secularism. The Constitution endeavors to create a socialist society in which the rule of law, fundamental human rights and freedom, equality and justice, political, economic and social, is secured for all its citizens.</strong>
+                </div>
+              </div>
+            </div>
+            <div class=" accordion-item bg-white border border-gray-200">
+              <h2 class="accordion-header mb-0" id="headingFour">
+                <button class="
+                  accordion-button
+                  collapsed
+                  relative
+                  flex
+                  items-center
+                  w-full
+                  py-4
+                  px-5
+                  text-base text-gray-800 text-left
+                  bg-white
+                  border-0
+                  rounded-none
+                  transition
+                  focus:outline-none
+                " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                  aria-controls="collapseThree">
+                  Why studying law?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body py-4 px-5">
+                  <strong>A law degree can give you the skills to be a successful lawyer but also a successful producer, politician, manager, journalist, diplomat or police officer; a law degree equips you for almost any profession that requires intellectual strength combined with a practical approach to the world.</strong>
+                </div>
+              </div>
+            </div>
+           
+            <div class=" accordion-item bg-white border border-gray-200">
+              <h2 class="accordion-header mb-0" id="headingFour">
+                <button class="
+                  accordion-button
+                  collapsed
+                  relative
+                  flex
+                  items-center
+                  w-full
+                  py-4
+                  px-5
+                  text-base text-gray-800 text-left
+                  bg-white
+                  border-0
+                  rounded-none
+                  transition
+                  focus:outline-none
+                " type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                  aria-controls="collapseFour">
+                  What are main sources of law?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body py-4 px-5">
+                  <strong>Primary sources of law are constitutions, statutes, regulations, and cases. Lawmaking powers are divided among three branches of government: executive; legislative; and judicial. These three branches of government, whether federal or state, create primary sources of law.</strong>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="">
+              <img src="./images/faq.png" alt="" />
+            </div>    
+          </div>
+        </div>
+      </section>
+      <!-- Contact us section  -->
+      <section class="container mx-auto md:flex-row p-2 md:p-10 md:mt-5">
+        <h2 class="font-bold text-5xl text-center text-b7-secondary font-ebfont">
+          Contact With Us
+        </h2>
+        <p class="text-center py-3  mx-auto text-b7-white">
+          The phrase let's talk typically refers to an invitation  for two or <br> more people to discuss something.
+        </p>
+        <!-- card area  -->
+        <div class="grid md:grid-cols-2 mt-10">
+          <div class="grid grid-cols-1 md:grid-cols-2 bg-gray-100">
+            <!-- 1st card -->
+            <div class="text-center border border-gray-200 p-3">
+              <div class="p-3">
+                <img src="./images/icon/business.png" alt="" class="mx-auto" />
+              </div>
+              <h3 class="font-bold text-2xl py-2 font-ebfont">Address</h3>
+              <p class="w-3/4 mx-auto text-b7-secondary mb-3">
+                #280,Sarshi,Kasipur <br>
+                Barishal,Bangladesh
+              </p>
+              
+            </div>
+  
+            <!-- 2nd card -->
+            <div class="text-center border border-gray-200 p-3 bg-gray-100">
+              <div class="p-3">
+                <img src="./images/contact/call.png" alt="" class="mx-auto" />
+              </div>
+              <h3 class="font-bold text-2xl py-2 font-ebfont">Call Us</h3>
+              <p class="w-3/4 mx-auto text-b7-secondary mb-3">
+                +88 0198 96 18 543 <br>
+                +88 0192 60 33 186
+              </p>
+              
+            </div>
+            <!-- 3rd card -->
+            <div class="text-center border border-gray-200 p-3">
+              <div class="p-3">
+                <img src="./images/contact/location.png" alt="" class="mx-auto" />
+              </div>
+              <h3 class="font-bold text-2xl py-2 font-ebfont">Email Us</h3>
+              <p class="w-3/4 mx-auto text-b7-secondary mb-3">
+                hmdmehedi2016@gmail.com <br>
+                mdmehedihasan20188@gmail.com
+              </p>
+              
+            </div>
+            <!-- 4th card -->
+            <div class="text-center border border-gray-200 p-3">
+              <div class="p-3">
+                <img src="./images/contact/time.png" alt="" class="mx-auto" />
+              </div>
+              <h3 class="font-bold text-2xl py-2 font-ebfont">Working Hours</h3>
+              <p class="w-3/4 mx-auto text-b7-secondary mb-3 ">
+                Mon-Fri: 9AM to 5PM <br>
+                Sunday: 9AM to 1 PM
+              </p>
+              
+            </div>
+        </div>
+                  
+            <form class="md:ml-8 ">
+              <div class="mb-3 ">
+                                <input type="text" id="email" class="text-gray-900 text-sm rounded-lg block w-full p-4 dark: dark:border-gray-200 dark:placeholder-gray-600 dark:text-white bg-b7-input" placeholder="Your Name" required>
+              </div>
+              <div class="mb-3">
+                      <input type="email" id="email" class="text-gray-900 text-sm rounded-lg block w-full p-4 dark: dark:border-gray-200 dark:placeholder-gray-600 dark:text-white bg-b7-input" placeholder="Your Email" required>
+              </div>
+              <div class="mb-3">
+                <input type="text" id="email" class="text-gray-900 text-sm rounded-lg block w-full p-4 dark: dark:border-gray-200 dark:placeholder-gray-600 dark:text-white bg-b7-input" placeholder="Subject" required>
+              </div>
+              <div class="mb-3">
+                <textarea class="text-gray-900 text-sm rounded-lg block w-full p-4 dark: dark:border-gray-200 dark:placeholder-gray-600 dark:text-white bg-b7-input" placeholder="Your Message" name="" id="" cols="30" rows="10">
+                  
+                </textarea>
+              </div>
+ 
+              <button type="submit" class="text-white bg-b7-primary hover:bg-b7-primary focus:ring-4 focus:outline-none focus:ring-b7-primary font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-b7-primary dark:hover:bg-b7-primary dark:focus:ring-b7-primary">Submit</button>
+            </form>
+
+        </div>
+      </section>
+
+            <!-- Footer Section  -->
+      <footer class="bg-b7-dark mt-4">
+        <div class="container mx-auto md:flex-row p-2 md:p-10 ">
+          <div class="flex justify-between flex-col md:flex-row">
+            <div>
+              <img
+                src="./images/logo.png"
+                alt=""
+                class="mx-auto py-4 md:py-0"
+              />
+            </div>
+            
+          </div>
+    
+          <div class="font-family grid grid-cols-1 md:grid-cols-4 my-10 text-white gap-9">
+            <div>
+              
+              <div class="space-y-4 text-b7-white-200"><br> 
+                <p>Justice, in its broadest sense, is the principle that people receive that which they deserve, with the interpretation of what then constitutes "deserving" being impacted upon by numerous fields, with many differing viewpoints and perspectives, including the concepts of moral correctness based on ethics</p>
+              </div>
+            </div>
+    
+            <div>
+              <h4 class="font-bold text-xl mb-3 font-ebfont">Usefull Link</h4>
+              <div class="space-y-3 text-b7-white-200">
+                <p>Homes</p>
+                <p>About Us</p>
+                <p>Cases</p>
+                <p>Blog</p>
+
+                <p>Contact Us</p>
+              </div>
+            </div>
+    
+            <div>
+              <h4 class="font-bold text-xl mb-3 font-ebfont ">Contact Now</h4>
+              <div class="space-y-3 text-b7-white-200">
+                <p>#280,Sarshi,Kasipur <br>
+                  Barishal,Bangladesh</p>
+                <p>+88 019 896 18 543 <br>
+                  +88 019 260 33 186</p>
+                <p>hmdmehedi2016@gmail.com <br>
+                  mdmehedihasan20188@gmail.com</p>
+                
+                
+              </div>
+            </div>
+    
+            <div >
+              <h4 class="font-bold text-xl mb-5 font-ebfont ">Subscribe</h4>
+              <div class="space-y-4">
+                <p class="my-3 text-b7-white-200">Subscribe for our latest & <br> Articles. We Won’t Give You <br> Spam Mails</p> 
+               
+              </div> <br>
+              <div class="flex  relative text-2xl ">
+                <input
+              type="text"
+              placeholder="  Email Address"
+              class="p-3 rounded w-60"
+            />
+            <button class="ml-56 absolute bg-b7-primary font-bold  py-3 px-9 rounded-lg">
+              <i class=" fa-solid fa-paper-plane"></i>
+            </button>
+                
+            </div>
+            
+            </div>
+          </div>
+          
+        </div>
+      </footer>
+    </main>
+    <!-- Js File  -->
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+  </body>
+</html>
